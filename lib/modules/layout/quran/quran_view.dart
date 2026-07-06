@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app_c19_mon/core/app_routes/app_routes_name.dart';
 import 'package:islami_app_c19_mon/core/gen/assets.gen.dart';
 import 'package:islami_app_c19_mon/core/theme/app_colors.dart';
 import 'package:islami_app_c19_mon/model/sura_data_model.dart';
@@ -812,7 +813,16 @@ class _QuranViewState extends State<QuranView> {
               physics: const NeverScrollableScrollPhysics(),
               padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
               itemBuilder: (context, index) {
-                return SuraItem(suraDataModel: quranSuras[index]);
+                return SuraItem(
+                  suraDataModel: quranSuras[index],
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      AppRoutesName.quranDetails,
+                      arguments: quranSuras[index],
+                    );
+                  },
+                );
               },
               separatorBuilder: (context, index) {
                 return Divider(indent: 40, endIndent: 40);
