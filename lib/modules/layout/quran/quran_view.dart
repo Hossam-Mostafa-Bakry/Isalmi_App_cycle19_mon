@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app_c19_mon/core/gen/assets.gen.dart';
 import 'package:islami_app_c19_mon/core/theme/app_colors.dart';
-
+ 
 /// Git & Github
 /// versioned vs un-versioned
 ///
