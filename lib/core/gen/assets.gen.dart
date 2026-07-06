@@ -50,6 +50,10 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/bottom_decoration_img.png
+  AssetGenImage get bottomDecorationImg =>
+      const AssetGenImage('assets/images/bottom_decoration_img.png');
+
   /// File path: assets/images/hadith_backgropund_img.png
   AssetGenImage get hadithBackgropundImg =>
       const AssetGenImage('assets/images/hadith_backgropund_img.png');
@@ -57,6 +61,14 @@ class $AssetsImagesGen {
   /// File path: assets/images/header_img.png
   AssetGenImage get headerImg =>
       const AssetGenImage('assets/images/header_img.png');
+
+  /// File path: assets/images/left_corner_img.png
+  AssetGenImage get leftCornerImg =>
+      const AssetGenImage('assets/images/left_corner_img.png');
+
+  /// File path: assets/images/most_recent_img.png
+  AssetGenImage get mostRecentImg =>
+      const AssetGenImage('assets/images/most_recent_img.png');
 
   /// File path: assets/images/quran_background_img.png
   AssetGenImage get quranBackgroundImg =>
@@ -66,9 +78,17 @@ class $AssetsImagesGen {
   AssetGenImage get radioBackgroundImg =>
       const AssetGenImage('assets/images/radio_background_img.png');
 
+  /// File path: assets/images/right_corner_img.png
+  AssetGenImage get rightCornerImg =>
+      const AssetGenImage('assets/images/right_corner_img.png');
+
   /// File path: assets/images/splash_img.png
   AssetGenImage get splashImg =>
       const AssetGenImage('assets/images/splash_img.png');
+
+  /// File path: assets/images/sura_number_frame_icn.png
+  AssetGenImage get suraNumberFrameIcn =>
+      const AssetGenImage('assets/images/sura_number_frame_icn.png');
 
   /// File path: assets/images/tasbeeh_background_img.png
   AssetGenImage get tasbeehBackgroundImg =>
@@ -80,11 +100,16 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    bottomDecorationImg,
     hadithBackgropundImg,
     headerImg,
+    leftCornerImg,
+    mostRecentImg,
     quranBackgroundImg,
     radioBackgroundImg,
+    rightCornerImg,
     splashImg,
+    suraNumberFrameIcn,
     tasbeehBackgroundImg,
     timerBackgroundImg,
   ];
